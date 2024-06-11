@@ -1,0 +1,36 @@
+.grow_button{
+    width: 70%;
+    align-self: flex-start;
+    margin: 20px 0px;
+    border-radius: 10px ;
+    padding: 10px;
+    font-size: 17px;
+    animation: 1s blinker infinite;
+    border: 2px solid rgb(197, 80, 3);
+    cursor: pointer;
+    background: black;
+    color: white;
+}
+@keyframes blinker 
+{
+    0%{
+        opacity: 80%;
+
+    }
+    100%{
+        opacity: 100%;
+       
+    }
+
+    
+}
+.grow_button:hover{
+    border: 2px solid white;
+}
+@media screen  and (max-width:800px){
+    .grow_button{
+        align-self: center;
+
+    }
+    
+}

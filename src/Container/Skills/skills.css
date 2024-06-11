@@ -1,0 +1,187 @@
+.skills_sections {
+  display: flex;
+  justify-content: space-evenly;
+  background-image: url("https://elearningindustry.com/wp-content/uploads/2021/07/shutterstock_1155561859.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  flex-direction: column;
+  color: rgb(255, 255, 255);
+  height: 100%;
+  padding-top: 80px;
+}
+.skills_sections::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  content: "";
+  background: rgba(0, 0, 0, 0.835);
+  width: 100%;
+  z-index: 1;
+}
+.Developmentskills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 35px;
+  padding: 50px;
+  width: 100%;
+  z-index: 2;
+}
+.skills_sections h1 {
+  font-size: var(--h1font);
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 2px 2px 2px rgb(133, 133, 133), 2px 2px 2px rgb(44, 44, 44);
+
+  z-index: 2;
+}
+.Developmentskills p {
+  border: 2px solid rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 5px rgb(33, 33, 33);
+  z-index: 2;
+  cursor: grab;
+  position: relative;
+}
+.Developmentskills p span {
+  position: absolute;
+  right: -12px;
+  top: 80%;
+}
+.Developmentskills p:hover {
+  transform: scale(1.04);
+}
+.Developmentskills p:nth-child(1) {
+  border: 2px solid red;
+  color: rgb(255, 37, 37);
+}
+.Developmentskills p:nth-child(2) {
+  color: rgb(255, 213, 0);
+  border: 2px solid rgb(255, 242, 0);
+}
+.Developmentskills p:nth-child(3) {
+  color: rgb(3, 252, 20);
+  border: 2px solid rgb(5, 164, 15);
+}
+.Developmentskills p:nth-child(4) {
+  color: rgb(0, 76, 255);
+  border: 2px solid rgb(0, 140, 255);
+}
+.Developmentskills p:nth-child(5) {
+  color: rgb(255, 0, 179);
+  border: 2px solid rgb(255, 0, 238);
+}
+.Developmentskills p:nth-child(6) {
+  color: rgb(255, 115, 0);
+  border: 2px solid rgb(255, 162, 0);
+}
+.skills_slider {
+  z-index: 3;
+  width: 80%; /* Adjust the width as needed */
+  padding: 50px;
+  margin: 0 auto;
+}
+.slider {
+  width: 100%;
+  margin: 0 auto;
+}
+/* In your skills.css file */
+
+.slider_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text within the div */
+}
+
+.slick-slide img {
+  height: 100px;
+}
+.slick-slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text within the div */
+}
+.slick-slide p {
+  font-size: 17px;
+  margin-top: 10px; /* Add some space between the image and text */
+  text-align: justify;
+}
+
+.slick-dots li button {
+  color: white;
+  margin-top: -15px;
+}
+.slick-dots li button::before {
+  color: white;
+  opacity: 1;
+}
+.slick-dots {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.slick-next {
+  right: 0px;
+}
+.slick-prev {
+  left: -55px;
+}
+.progressbar {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.progress_box {
+  display: flex;
+
+  flex-direction: column;
+  justify-content: start;
+  width: 60%;
+}
+.progressbar h1 {
+  margin: 30px 0px;
+}
+@media screen and (max-width: 800px) {
+  .skills_sections {
+    width: 100%;
+    align-items: center;
+    height: 100%;
+  }
+  .Developmentskills {
+    grid-template-columns: 2fr;
+
+    width: 100%;
+  }
+  .Developmentskills p {
+    height: 60px;
+  }
+
+  .skills_slider {
+    z-index: 3;
+    width: 80%; /* Adjust the width as needed */
+  }
+  .slick-slide img {
+    width: auto;
+  }
+  .slick-slide p {
+    font-size: 12px;
+  }
+  .skills_sections h1 {
+    font-size: 28px;
+    margin: 20px 0px;
+  }
+  .progress_box {
+    width: 100%;
+  }
+}

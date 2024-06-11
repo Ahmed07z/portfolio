@@ -1,0 +1,64 @@
+.footer_section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+  color: white;
+ width: 100%;
+}
+.footer_box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 30px;
+  justify-content: space-evenly;
+  background: rgb(37, 37, 37);
+  box-shadow: 1px 0px 2px 3px rgb(66, 66, 66);
+  border: 2px solid black;
+  color: white;
+ width: 95%;
+ border-radius: 20px 20px 0px 0px;
+ align-self: center;
+}
+.footerimg img{
+    width: 100px;
+    
+}
+.footer_box ul {
+    display: grid;
+      grid-template-columns: repeat(3, 1fr); /* Two columns with equal width */
+    gap: 10px;
+    justify-items: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+}
+
+
+.footer_box h2{
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px; /* No unit needed */
+}
+.footer_socials ul div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px; /* Make div take full width of grid cell */
+}
+
+.footer_socials ul button {
+    font-size: 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.footer_socials ul button:hover {
+    font-size: 25px;
+    border: 1px solid white;
+    border-radius: 999px;
+    padding: 5px 10px;
+    background: #000;
+}

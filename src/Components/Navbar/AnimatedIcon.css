@@ -1,0 +1,17 @@
+/* AnimatedIcon.css */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  position: relative;
+}
+
+.line {
+  width: 22px;
+  height: 2px;
+  background-color: #ff640b;
+  position: absolute;
+}

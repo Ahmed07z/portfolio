@@ -1,0 +1,91 @@
+.introduction_section {
+    background: rgb(45,45,45);
+    background: radial-gradient(circle, rgba(45,45,45,1) 4%, rgba(0,0,0,1) 70%, rgba(45,45,45,1) 100%, rgba(255,143,44,1) 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro_text {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    text-align: left;
+  
+    padding: 50px;
+    width: 50%; /* Adjust the width as needed */
+}
+
+.intro_text h1 {
+    font-size: 70px;
+    background: linear-gradient(to right, red, orange);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 10;
+}
+.intro_text h2{
+    font-size: 30px;
+    color: rgb(112, 113, 112);
+
+}
+
+.intro_text p{
+    font-size: 20px;
+    margin:10px 0px;
+
+}
+.portfolioImage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%; /* Adjust the width as needed */
+}
+
+.portfolioImage img {
+   width: 70%; /* Adjust the width of the image */
+  
+}
+.quote {
+    font-size: 24px; /* Adjust the size of the quotation marks */
+    color: #888; /* Adjust the color of the quotation marks */
+  }
+  
+
+  @media screen and (max-width:800px){
+    .introduction_section{
+        flex-direction: column-reverse;
+        height: 100vh;
+       
+     
+    }
+    .intro_text{
+        width: 90%;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+    }
+    .intro_text h1{
+        font-size: 30px;
+    }
+    .intro_text h2{
+        font-size: 15px;
+        text-wrap: nowrap;
+    }
+    .intro_text p{
+        font-size: 13px;
+       text-align: center;
+    }
+   
+  .portfolioImage {
+    width: 100%;
+    margin-bottom: 50px;
+ 
+  }
+  .portfolioImage img{
+    width: 50%;
+  }
+   
+  }
