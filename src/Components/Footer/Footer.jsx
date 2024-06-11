@@ -11,7 +11,7 @@ const Footer = () => {
 
         <div className="footerimg"><img src="A.png" alt="" /></div>
         <div className="footer_socials">
-            <h2>Socials</h2>
+            <h2>Socials Connects</h2>
             <ul>
                 <div><button><FontAwesomeIcon icon={faFacebook} /></button> </div>
                 <div><button><FontAwesomeIcon icon={faInstagram} /></button> </div>
